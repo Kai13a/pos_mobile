@@ -70,14 +70,6 @@ class _Loginfield extends State<Loginfield> {
     }
   }
 
-  //For password toggle
-
-  //@override
-  //void dispose() {
-  //  _passwordField.dispose();
-  //  super.dispose();
-  //}
-
   void _togglePasswordVisibility() {
     setState(() {
       _obscureText = !_obscureText;
@@ -121,10 +113,9 @@ class _Loginfield extends State<Loginfield> {
               OutlineInputBorder(
                 borderRadius: BorderRadius.circular(20.0),
                 borderSide: const BorderSide(
-                  // Change border color here
                   color: ColorPalette
-                      .color1, // Adjust to your desired border color
-                  width: 2.0, // Adjust to your desired border width
+                      .color1,
+                  width: 2.0,
                 ),
               ),
             ),
